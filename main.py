@@ -3,9 +3,9 @@ from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
-@app.get("/", response_class=JSONResponse)
+@app.get("/")
 async def root():
-    return {"message": "API is working!"}
+    return {"message": "API is running"}
 
 @app.get("/health", response_class=JSONResponse)
 async def health():
